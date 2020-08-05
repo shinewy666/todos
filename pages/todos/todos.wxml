@@ -1,7 +1,7 @@
 <view class="container">
   <view class="header">
     <image src="../../images/add.png" bindtap="addTodoHandle"></image>
-    <input type="text" placeholder="Anything here..." value="{{input}}" bindinput="inputChangeHandle"></input>
+    <input type="text" placeholder="Anything here..." value="{{input}}" bindinput="inputChangeHandle" bindconfirm="addTodoHandle"></input>
   </view>
   <view class="todos" >
     <view class="item {{item.completed ? 'completed':''}}" wx:key="index" wx:for="{{todos}}" bindtap="toggleTodos" data-index="{{ index }}">
