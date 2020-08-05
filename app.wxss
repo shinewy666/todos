@@ -1,0 +1,46 @@
+.container{
+  border-top: 1rpx solid #e0e0e0;
+}
+.container .header>image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.container .header{
+  display: flex;
+  align-items:center ;
+  margin: 20rpx;
+  padding: 20rpx;
+  border: 1rpx solid #e0e0e0;
+  border-radius: 5rpx ;
+  box-shadow: 0 0 5rpx #e0e0e0;
+}
+.todos{
+  border: 1rpx solid #e0e0e0;
+  margin: 20rpx;
+  border-radius: 5rpx;
+  box-shadow: 0 0 5px #e0e0e0;
+}
+.todos .item{
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.todos .item text{
+  margin-left: 20rpx;
+  flex:1;
+}
+.todos .item.completed text{
+  color:#888;
+  text-decoration: line-through;
+}
+.todos .item:last-child{
+  border-bottom: 0;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  margin: 20rpx;
+  font-size: 30rpx;
+}
